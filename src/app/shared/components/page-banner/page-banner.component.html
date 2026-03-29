@@ -1,0 +1,14 @@
+<section class="page-banner">
+  <div class="page-banner__bg"></div>
+  <div class="container">
+    <div class="page-banner__content">
+      <p class="page-banner__breadcrumb">
+        <a routerLink="/">Home</a>
+        <span class="sep">/</span>
+        <span>{{ breadcrumb || title }}</span>
+      </p>
+      <h1 class="page-banner__title">{{ title }}</h1>
+      <p class="page-banner__subtitle" *ngIf="subtitle">{{ subtitle }}</p>
+    </div>
+  </div>
+</section>

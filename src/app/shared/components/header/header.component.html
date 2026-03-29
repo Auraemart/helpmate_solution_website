@@ -1,0 +1,64 @@
+<header class="header" [class.scrolled]="isScrolled">
+  <div class="container">
+    <div class="header__inner">
+      <!-- Logo -->
+      <a routerLink="/" class="header__logo" (click)="closeMobileMenu()">
+        <div class="logo-mark">
+          <span class="logo-icon">HS</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Helpmate</span>
+          <span class="logo-tagline">Solution</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="header__nav">
+        <a
+          *ngFor="let item of navItems"
+          [routerLink]="item.route"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+          class="nav-link"
+        >
+          {{ item.label }}
+        </a>
+        <a href="tel:8586021659" class="btn-call">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+          858-602-1659
+        </a>
+      </nav>
+
+      <!-- Hamburger -->
+      <button class="hamburger" (click)="toggleMobileMenu()" [class.open]="isMobileMenuOpen" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" [class.open]="isMobileMenuOpen">
+    <nav class="mobile-nav">
+      <a
+        *ngFor="let item of navItems"
+        [routerLink]="item.route"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+        class="mobile-nav-link"
+        (click)="closeMobileMenu()"
+      >
+        {{ item.label }}
+      </a>
+      <a href="tel:8586021659" class="mobile-nav-link mobile-call">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 6px;">
+          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+        858-602-1659
+      </a>
+    </nav>
+  </div>
+</header>
