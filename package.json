@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href /helpmate_solution_website/",
+    "build": "ng build",
     "postbuild": "mkdir -p docs && cp -r dist/helpmate-solution/browser/* docs/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
