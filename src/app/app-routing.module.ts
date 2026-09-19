@@ -19,6 +19,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/cctv/cctv-page.module').then(m => m.CctvPageModule),
   },
   {
+    path: 'recruitment',
+    loadChildren: () => import('./pages/recruitment/recruitment-page.module').then(m => m.RecruitmentPageModule),
+  },
+  {
     path: 'vehicle-insurance',
     loadChildren: () => import('./pages/vehicle-insurance/vehicle-insurance-page.module').then(m => m.VehicleInsurancePageModule),
   },

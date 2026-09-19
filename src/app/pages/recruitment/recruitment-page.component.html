@@ -1,0 +1,16 @@
+<section class="recruitment-hero">
+  <div class="container recruitment-hero__grid">
+    <div><span class="eyebrow">Helpmate Recruitment</span><h1>People who power<br><span>your next chapter.</span></h1><p>From high-potential professionals to experienced leaders, Helpmate connects organisations with the talent they need to grow with confidence.</p><div class="hero-actions"><a href="mailto:helpmatehrsolution@gmail.com?subject=Hiring%20Enquiry" class="btn btn-primary">Start hiring with us</a><a routerLink="/jobs" class="btn btn-outline">Explore job openings</a></div><div class="hero-points"><span>Qualified candidates</span><span>Focused shortlists</span><span>Dedicated support</span></div></div>
+    <div class="hero-visual"><img src="images/img-25.jpeg" alt="Recruitment team collaborating"><div class="hero-note"><strong>Talent meets opportunity</strong><span>Hiring support that puts people first.</span></div></div>
+  </div>
+</section>
+
+<section class="section intro-section"><div class="container intro-grid"><div><span class="eyebrow">Recruitment solutions</span><h2>Hiring made more thoughtful.</h2></div><p>Every great hire begins with a clear understanding of the role and the people behind it. We combine recruitment expertise, careful screening, and responsive coordination to make talent acquisition easier.</p></div></section>
+
+<section class="section services-section"><div class="container"><div class="section-heading"><span class="eyebrow">How we help</span><h2>Recruitment support for every stage.</h2></div><div class="service-grid"><article *ngFor="let service of services"><img [src]="services.indexOf(service) === 0 ? 'images/img-20.jpeg' : (services.indexOf(service) === 1 ? 'images/img-21.jpeg' : 'images/img-22.jpeg')" [alt]="service.title"><div><span>0{{ services.indexOf(service) + 1 }}</span><h3>{{ service.title }}</h3><p>{{ service.text }}</p></div></article></div></div></section>
+
+<section class="section process-section"><div class="container process-layout"><div><span class="eyebrow">Our process</span><h2>A structured path to the right hire.</h2><p>We work as an extension of your team, bringing clarity and momentum to every step of your recruitment process.</p><img src="images/img-23.jpeg" alt="Recruitment process illustration" class="process-image"></div><div class="process-grid"><article *ngFor="let step of process"><span>{{ step.number }}</span><h3>{{ step.title }}</h3><p>{{ step.text }}</p></article></div></div></section>
+
+<section class="section gallery-section"><div class="container"><div class="section-heading section-heading--center"><span class="eyebrow">Focused on fit</span><h2>Recruitment built around people and potential.</h2></div><figure class="gallery-feature"><img src="images/img-24.jpeg" alt="Candidate recruitment word cloud"><figcaption>Connecting skills, ambition, and opportunity.</figcaption></figure></div></section>
+
+<section class="recruitment-cta"><div class="container recruitment-cta__inner"><div><span class="eyebrow eyebrow--light">Build your team</span><h2>Ready to make your next great hire?</h2><p>Tell us about the role and we'll help you find the right people.</p></div><a href="mailto:helpmatehrsolution@gmail.com?subject=Hiring%20Enquiry" class="btn btn-white">Contact our recruitment team</a></div></section>

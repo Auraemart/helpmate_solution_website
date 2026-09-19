@@ -69,7 +69,7 @@
       <p class="section-desc">Four specialized service verticals under one trusted roof — designed to serve businesses and individuals across the NCR region.</p>
     </div>
     <div class="services-grid">
-      <div class="service-card" *ngFor="let service of services" [style.--accent-color]="service.color" [style.--accent-bg]="service.bgColor" [class.service-card--clickable]="service.id === 'cctv' || service.id === 'vehicle-insurance'" [routerLink]="service.id === 'cctv' ? ['/cctv'] : (service.id === 'vehicle-insurance' ? ['/vehicle-insurance'] : null)" [attr.role]="service.id === 'cctv' || service.id === 'vehicle-insurance' ? 'link' : null" [attr.tabindex]="service.id === 'cctv' || service.id === 'vehicle-insurance' ? 0 : null">
+      <div class="service-card" *ngFor="let service of services" [style.--accent-color]="service.color" [style.--accent-bg]="service.bgColor" [class.service-card--clickable]="service.id === 'cctv' || service.id === 'recruitment' || service.id === 'vehicle-insurance'" [routerLink]="service.id === 'cctv' ? ['/cctv'] : (service.id === 'recruitment' ? ['/recruitment'] : (service.id === 'vehicle-insurance' ? ['/vehicle-insurance'] : null))" [attr.role]="service.id === 'cctv' || service.id === 'recruitment' || service.id === 'vehicle-insurance' ? 'link' : null" [attr.tabindex]="service.id === 'cctv' || service.id === 'recruitment' || service.id === 'vehicle-insurance' ? 0 : null">
         <div class="service-card__icon">
           <!-- CCTV Icon -->
           <svg *ngIf="service.icon === 'cctv'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -97,7 +97,7 @@
             {{ feature }}
           </li>
         </ul>
-        <a [routerLink]="service.id === 'cctv' ? ['/cctv'] : (service.id === 'vehicle-insurance' ? ['/vehicle-insurance'] : ['/services'])" [fragment]="service.id === 'cctv' || service.id === 'vehicle-insurance' ? '' : service.id" class="service-card__link">
+        <a [routerLink]="service.id === 'cctv' ? ['/cctv'] : (service.id === 'recruitment' ? ['/recruitment'] : (service.id === 'vehicle-insurance' ? ['/vehicle-insurance'] : ['/services']))" [fragment]="service.id === 'cctv' || service.id === 'recruitment' || service.id === 'vehicle-insurance' ? '' : service.id" class="service-card__link">
           Learn More
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
