@@ -62,7 +62,7 @@ export class AboutComponent implements OnInit {
     {
       year: '2019',
       title: 'Founded',
-      description: 'Helpmate Solution was founded by Akki Mahajan in Sahibabad, Ghaziabad, starting with HR and recruitment services.',
+      description: 'Helpmate Solution was founded by Akki Gupta Mahajan in Sahibabad, Ghaziabad, starting with HR and recruitment services.',
     },
     {
       year: '2020',

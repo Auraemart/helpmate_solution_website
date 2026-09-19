@@ -83,7 +83,7 @@ export class ServicesDataService {
     return [
       {
         id: 1,
-        name: 'Akki Mahajan',
+        name: 'Akki Gupta Mahajan',
         role: 'Founder & CEO',
         bio: 'Visionary entrepreneur with extensive experience in business consulting, security solutions, and talent management. Akki founded Helpmate Solution with a mission to be the one-stop growth partner for businesses across the NCR.',
         initials: 'AM',
@@ -91,19 +91,11 @@ export class ServicesDataService {
       },
       {
         id: 2,
-        name: 'Surbhi',
+        name: 'Surbhi Singhal',
         role: 'Co-Founder & COO',
         bio: 'A dynamic leader overseeing day-to-day operations across all service verticals. Surbhi brings strategic thinking and operational excellence to ensure every client receives world-class service delivery.',
         initials: 'SU',
         bgColor: '#7c3aed',
-      },
-      {
-        id: 3,
-        name: 'Abhishek Sharma',
-        role: 'Sales Manager',
-        bio: 'Driven sales professional with a proven track record in business development and client relationship management. Abhishek heads the sales operations and ensures consistent growth across all departments.',
-        initials: 'AS',
-        bgColor: '#059669',
       },
     ];
   }
