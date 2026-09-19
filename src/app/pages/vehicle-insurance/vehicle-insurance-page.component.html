@@ -1,0 +1,58 @@
+<section class="insurance-hero">
+  <div class="container insurance-hero__grid">
+    <div class="insurance-hero__content">
+      <span class="eyebrow">Helpmate Vehicle Insurance</span>
+      <h1>Protection for every<br><span>journey ahead.</span></h1>
+      <p>Helpmate helps vehicle owners understand car insurance, compare suitable coverage, and choose policies that fit their vehicle and needs.</p>
+      <div class="hero-actions">
+        <a href="tel:8586021659" class="btn btn-primary">Talk to an insurance advisor</a>
+        <a href="mailto:helpmatersolution@gmail.com?subject=Vehicle%20Insurance%20Enquiry" class="btn btn-outline">Request a callback</a>
+      </div>
+      <div class="hero-points"><span>Compare cover options</span><span>Policy renewals</span><span>Claim guidance</span></div>
+    </div>
+    <div class="insurance-hero__visual">
+      <div class="hero-shape"></div>
+      <img src="images/img-10.jpeg" alt="Vehicle insurance options available at Helpmate" class="hero-image">
+      <div class="hero-note"><strong>Insurance made clearer</strong><span>Guidance for cover, add-ons, and renewal.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section intro-section">
+  <div class="container intro-grid">
+    <div><span class="eyebrow">Choose with clarity</span><h2>Insurance support that starts with your needs.</h2></div>
+    <p>Car insurance does more than meet a requirement—it can help protect you from unexpected costs. We simplify the options, explain what each policy includes, and help you make an informed choice for your vehicle.</p>
+  </div>
+</section>
+
+<section class="section coverage-section">
+  <div class="container">
+    <div class="section-heading"><span class="eyebrow">What we help with</span><h2>Find the cover that works for you.</h2></div>
+    <div class="coverage-grid"><article *ngFor="let option of coverageOptions" class="coverage-card"><span>0{{ coverageOptions.indexOf(option) + 1 }}</span><h3>{{ option.title }}</h3><p>{{ option.text }}</p></article></div>
+  </div>
+</section>
+
+<section class="section insurer-section">
+  <div class="container insurer-grid">
+    <div><span class="eyebrow">Compare with confidence</span><h2>Understand your insurance options.</h2><p>We help you review cover types, policy terms, and available choices so you can make a more informed decision for your vehicle.</p><small>Insurer availability and policy eligibility may vary.</small></div>
+    <figure class="insurer-image"><img src="images/img-19.jpeg" alt="Leading general insurance company logos"></figure>
+  </div>
+</section>
+
+<section class="section vehicle-section">
+  <div class="container">
+    <div class="section-heading section-heading--center"><span class="eyebrow">For every vehicle</span><h2>Insurance guidance across the road.</h2><p>Whether you ride, drive, or manage a commercial fleet, our team can help you explore the appropriate policy options.</p></div>
+    <div class="vehicle-grid"><article *ngFor="let vehicle of vehicleTypes" class="vehicle-card"><img [src]="vehicle.image" [alt]="vehicle.title + ' insurance'"><div><h3>{{ vehicle.title }}</h3><p>{{ vehicle.text }}</p></div></article></div>
+  </div>
+</section>
+
+<section class="section benefits-section">
+  <div class="container benefits-grid">
+    <figure class="benefit-image"><img src="images/img-14.jpeg" alt="Car insurance protection illustration"></figure>
+    <div><span class="eyebrow">Why Helpmate</span><h2>Less confusion. More confidence.</h2><p>We take a practical, customer-first approach to vehicle insurance. Our goal is to help you understand the policy before you choose it—not just complete a transaction.</p><ul><li>Clear explanations of coverage and exclusions</li><li>Support in comparing plans and add-ons</li><li>Help with policy renewal and documentation</li><li>Guidance when you need to raise a claim</li></ul></div>
+  </div>
+</section>
+
+<section class="section process-section"><div class="container"><div class="section-heading section-heading--center"><span class="eyebrow">Simple process</span><h2>Get started in four easy steps.</h2></div><div class="process-grid"><article *ngFor="let step of steps"><span>{{ step.number }}</span><h3>{{ step.title }}</h3><p>{{ step.text }}</p></article></div></div></section>
+
+<section class="insurance-cta"><div class="container insurance-cta__inner"><div><span class="eyebrow eyebrow--light">Let's get you covered</span><h2>Need help with vehicle insurance?</h2><p>Speak with Helpmate for clear, friendly guidance on your next policy.</p></div><img src="images/img-15.jpeg" alt="Vehicle insurance claims illustration"><a href="tel:8586021659" class="btn btn-white">Call 858-602-1659</a></div></section>

@@ -105,6 +105,45 @@
     gap: 1.5rem;
   }
 
+  .office-gallery {
+    display: grid;
+    grid-template-columns: 0.82fr 1.18fr;
+    grid-template-rows: repeat(2, 150px);
+    gap: 0.9rem;
+  }
+
+  .office-photo {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    background: var(--gray-100);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    &:hover img { transform: scale(1.04); }
+
+    figcaption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 1.35rem 0.8rem 0.7rem;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: linear-gradient(transparent, rgba(15, 23, 42, 0.8));
+    }
+
+    &--entrance { grid-row: span 2; }
+  }
+
   .visual-card {
     background: linear-gradient(135deg, #1a3c6e 0%, #2563eb 100%);
     border-radius: var(--radius-xl);
@@ -185,6 +224,15 @@
       color: var(--gray-500);
       font-weight: 500;
     }
+  }
+
+  @media (max-width: 500px) {
+    .office-gallery {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 190px);
+    }
+
+    .office-photo--entrance { grid-row: auto; }
   }
 }
 

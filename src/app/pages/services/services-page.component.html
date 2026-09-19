@@ -1,6 +1,6 @@
 <app-page-banner
   title="Our Services"
-  subtitle="Four specialized divisions, one trusted partner for all your business needs."
+  subtitle="Three specialized divisions, one trusted partner for your business needs."
   breadcrumb="Services">
 </app-page-banner>
 
@@ -10,7 +10,7 @@
     <div class="section-header">
       <span class="section-badge">What We Offer</span>
       <h2>Comprehensive Business Solutions</h2>
-      <p>From security surveillance to talent acquisition, property dealing to software development — Helpmate Solution delivers excellence across every domain.</p>
+      <p>From security surveillance to talent acquisition and software development — Helpmate Solution delivers excellence across every domain.</p>
     </div>
   </div>
 </section>
@@ -127,64 +127,10 @@
   </div>
 </section>
 
-<!-- Property Service -->
-<section class="service-detail section bg-gray" id="property">
-  <div class="container">
-    <div class="service-detail-grid" *ngIf="services[2] as prop">
-      <div class="service-detail-content">
-        <div class="service-icon-wrap" [style.background]="prop.bgColor" [style.color]="prop.color">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-            <polyline points="9 22 9 12 15 12 15 22"/>
-          </svg>
-        </div>
-        <span class="service-label" [style.background]="prop.bgColor" [style.color]="prop.color">
-          {{ prop.subtitle }}
-        </span>
-        <h2>{{ prop.title }}</h2>
-        <p>{{ prop.description }}</p>
-        <ul class="feature-list">
-          <li *ngFor="let f of prop.features">
-            <span class="check-icon" [style.color]="prop.color">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-            </span>
-            {{ f }}
-          </li>
-        </ul>
-        <a [href]="'mailto:' + prop.email" class="btn btn-property">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
-          Enquire: {{ prop.email }}
-        </a>
-      </div>
-      <div class="service-detail-visual">
-        <div class="visual-panel" [style.background]="'linear-gradient(135deg, ' + prop.color + '22, ' + prop.color + '11)'">
-          <div class="vp-icon-large" [style.color]="prop.color">
-            <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M10 35L40 8l30 27v35H50V45H30v25H10V35z"/>
-              <rect x="32" y="55" width="16" height="15"/>
-            </svg>
-          </div>
-          <div class="vp-tags">
-            <span class="vp-tag" [style.background]="prop.bgColor" [style.color]="prop.color">Buy / Sell</span>
-            <span class="vp-tag" [style.background]="prop.bgColor" [style.color]="prop.color">Rental Properties</span>
-            <span class="vp-tag" [style.background]="prop.bgColor" [style.color]="prop.color">Legal Docs</span>
-            <span class="vp-tag" [style.background]="prop.bgColor" [style.color]="prop.color">Investment Advisory</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Software Service -->
 <section class="service-detail section bg-white" id="software">
   <div class="container">
-    <div class="service-detail-grid reverse" *ngIf="services[3] as sw">
+    <div class="service-detail-grid reverse" *ngIf="services[2] as sw">
       <div class="service-detail-visual">
         <div class="visual-panel" [style.background]="'linear-gradient(135deg, ' + sw.color + '22, ' + sw.color + '11)'">
           <div class="vp-icon-large" [style.color]="sw.color">

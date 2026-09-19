@@ -44,24 +44,6 @@ export class ServicesDataService {
         bgColor: '#f5f3ff',
       },
       {
-        id: 'property',
-        title: 'Property Dealing',
-        subtitle: 'Helpmate Realty',
-        description: 'Your trusted real estate partner in the NCR region. We assist buyers, sellers, and renters with residential and commercial property transactions, backed by deep local market knowledge.',
-        features: [
-          'Residential Property Buy / Sell / Rent',
-          'Commercial Space Leasing',
-          'Property Valuation & Consultation',
-          'Legal Documentation Assistance',
-          'Investment Advisory',
-          'Plot & Land Deals',
-        ],
-        icon: 'property',
-        email: 'helpmaterealty@gmail.com',
-        color: '#059669',
-        bgColor: '#ecfdf5',
-      },
-      {
         id: 'software',
         title: 'Software Development',
         subtitle: 'Helpmate Software',
@@ -78,6 +60,21 @@ export class ServicesDataService {
         email: 'helpmatesoftware@gmail.com',
         color: '#d97706',
         bgColor: '#fffbeb',
+      },
+      {
+        id: 'vehicle-insurance',
+        title: 'Vehicle Insurance',
+        subtitle: 'Helpmate Insurance',
+        description: 'Clear and reliable vehicle insurance guidance for cars, two-wheelers, and commercial vehicles. We help you understand coverage, compare suitable options, and renew your policy with confidence.',
+        features: [
+          'Comprehensive & Third-Party Cover',
+          'Policy Renewal & Add-On Guidance',
+          'Claim & Documentation Support',
+        ],
+        icon: 'vehicle-insurance',
+        email: 'helpmatersolution@gmail.com',
+        color: '#dc2626',
+        bgColor: '#fff1f2',
       },
     ];
   }

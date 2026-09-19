@@ -70,11 +70,6 @@ export class AboutComponent implements OnInit {
       description: 'Expanded into security solutions with the launch of Helpmate CCTV, catering to homes, offices, and commercial spaces.',
     },
     {
-      year: '2021',
-      title: 'Property Division Added',
-      description: 'Helpmate Realty was introduced to assist NCR clients in buying, selling, and renting residential and commercial properties.',
-    },
-    {
       year: '2023',
       title: 'Software Division',
       description: 'Helpmate Software was launched to provide custom web, mobile, and enterprise software solutions to businesses.',

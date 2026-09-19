@@ -25,7 +25,6 @@ export class HomeComponent implements OnInit {
   serviceOptions = [
     'CCTV Surveillance',
     'Recruitment Solutions',
-    'Property Dealing',
     'Software Development',
     'General Enquiry',
   ];
