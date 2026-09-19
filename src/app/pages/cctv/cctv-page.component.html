@@ -63,6 +63,22 @@
   </div>
 </section>
 
+<section class="section systems-section">
+  <div class="container">
+    <div class="section-heading section-heading--center">
+      <span class="eyebrow">Beyond surveillance</span>
+      <h2>Complete access and entry security.</h2>
+      <p>Bring cameras, attendance, access control, and vehicle entry together with solutions tailored to how your premises operate.</p>
+    </div>
+    <div class="systems-grid">
+      <article class="system-card" *ngFor="let system of securitySystems">
+        <img [src]="system.image" [alt]="system.title">
+        <div class="system-card__body"><h3>{{ system.title }}</h3><p>{{ system.text }}</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="section process-section">
   <div class="container"><div class="section-heading section-heading--center"><span class="eyebrow">Our approach</span><h2>From first visit to confident coverage.</h2></div>
     <div class="process-grid"><article *ngFor="let step of process"><span>{{ step.number }}</span><h3>{{ step.title }}</h3><p>{{ step.text }}</p></article></div>
