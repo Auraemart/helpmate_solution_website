@@ -1,0 +1,74 @@
+<section class="cctv-hero">
+  <div class="container cctv-hero__grid">
+    <div class="cctv-hero__content">
+      <span class="eyebrow">Helpmate CCTV</span>
+      <h1>Security that keeps<br><span>watching over what matters.</span></h1>
+      <p>Reliable CCTV solutions for homes, offices, shops, factories, and commercial spaces. From choosing the right cameras to installation and support, Helpmate makes security simple.</p>
+      <div class="hero-actions">
+        <a href="tel:8586021659" class="btn btn-primary">Call for a free consultation</a>
+        <a href="mailto:helpmatecctv@gmail.com" class="btn btn-outline">Email our CCTV team</a>
+      </div>
+      <div class="hero-points">
+        <span>HD &amp; 4K options</span><span>Mobile viewing</span><span>Professional installation</span>
+      </div>
+    </div>
+    <div class="cctv-hero__image-wrap">
+      <div class="image-orbit orbit-one"></div><div class="image-orbit orbit-two"></div>
+      <img src="images/img-1.jpeg" alt="CCTV camera and recorder installation kit" class="cctv-hero__image">
+      <div class="support-note"><strong>Designed around your space</strong><span>Coverage, clarity, and convenient access.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section intro-section">
+  <div class="container intro-grid">
+    <div>
+      <span class="eyebrow">Complete CCTV service</span>
+      <h2>Protection should feel effortless.</h2>
+    </div>
+    <p>Every property is different. We take the time to understand the areas you want to protect, then provide a practical surveillance setup with clear footage, reliable recording, and easy remote access when you need it.</p>
+  </div>
+</section>
+
+<section class="section solutions-section">
+  <div class="container">
+    <div class="section-heading"><span class="eyebrow">Where we help</span><h2>Security solutions for every kind of space.</h2></div>
+    <div class="solution-grid">
+      <article class="solution-card" *ngFor="let solution of solutions">
+        <div class="solution-card__number">0{{ solutions.indexOf(solution) + 1 }}</div>
+        <h3>{{ solution.title }}</h3><p>{{ solution.text }}</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section equipment-section">
+  <div class="container equipment-grid">
+    <div class="equipment-copy">
+      <span class="eyebrow">The right setup</span>
+      <h2>Clear visibility, day and night.</h2>
+      <p>We can help you select the right mix of indoor, outdoor, dome, bullet, and night-vision cameras, with DVR or NVR recording that fits your premises and budget.</p>
+      <ul>
+        <li>HD and 4K IP camera installation</li>
+        <li>DVR / NVR setup and configuration</li>
+        <li>Remote monitoring through your mobile app</li>
+        <li>Wired and wireless camera systems</li>
+        <li>Annual maintenance and system upgrades</li>
+      </ul>
+    </div>
+    <div class="equipment-gallery">
+      <figure class="gallery-image gallery-image--large"><img src="images/img-2.jpeg" alt="CCTV camera kit with recorder and accessories"><figcaption>Complete surveillance kits</figcaption></figure>
+      <figure class="gallery-image gallery-image--small"><img src="images/img-3.jpeg" alt="Selection of CCTV security cameras"><figcaption>Indoor &amp; outdoor cameras</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section process-section">
+  <div class="container"><div class="section-heading section-heading--center"><span class="eyebrow">Our approach</span><h2>From first visit to confident coverage.</h2></div>
+    <div class="process-grid"><article *ngFor="let step of process"><span>{{ step.number }}</span><h3>{{ step.title }}</h3><p>{{ step.text }}</p></article></div>
+  </div>
+</section>
+
+<section class="cctv-cta">
+  <div class="container cctv-cta__inner"><div><span class="eyebrow eyebrow--light">Let's secure your space</span><h2>Ready for smarter surveillance?</h2><p>Tell us about your property and we'll help you plan the right CCTV solution.</p></div><a href="tel:8586021659" class="btn btn-white">Speak with our CCTV team</a></div>
+</section>

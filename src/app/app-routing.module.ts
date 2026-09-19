@@ -15,6 +15,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/services/services-page.module').then(m => m.ServicesPageModule),
   },
   {
+    path: 'cctv',
+    loadChildren: () => import('./pages/cctv/cctv-page.module').then(m => m.CctvPageModule),
+  },
+  {
     path: 'jobs',
     loadChildren: () => import('./pages/jobs/jobs.module').then(m => m.JobsModule),
   },
